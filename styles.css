@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Chicle-Regular';
+  src: url('fonts/Chicle-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Chicle-Regular', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.header {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  padding: 40px 60px;
+  box-shadow: 30px 1px 20px grey;
+  gap: 30px;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.search-bar,
+.greeting {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.search-bar,
+.greeting,
+.list ul {
+  gap: 30px;
+}
+
+.search-bar, 
+.greeting,
+.account,
+.list ul {
+  align-items: center;
+}
+
+.search-bar form {
+  display: grid;
+}
+
+.search-bar input {
+  width: 80%;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(185, 213, 255);
+}
+
+.greeting span {
+  font-size: 25px;
+}
+
+.greeting h1 {
+  line-height: 1.5;
+}
+
+.account,
+.list ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.account {
+  gap: 20px;
+}
+
+.pac-man {
+  filter: invert(87%) invert(13%) sepia(94%) saturate(1472%) hue-rotate(351deg) brightness(95%) contrast(106%);
+}
+
+.list ul {
+  list-style-type: none;
+}
+
+button {
+  font-size: 25px;
+  padding: 15px 50px;
+  border-radius: 30px;
+  font-family: 'Chicle-Regular', sans-serif;
+  color: white;
+  border: none;
+  background-color: rgb(59, 151, 255);
+}
